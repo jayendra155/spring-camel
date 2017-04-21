@@ -1,10 +1,12 @@
 package com.springcamel.routebuilders;
 
 import org.apache.camel.builder.RouteBuilder;
+import org.springframework.stereotype.Component;
 
 import com.springcamel.processors.FileValidationExceptionProcessor;
 import com.springcamel.utility.FileValidationException;
 
+@Component
 public class FileToFileRouteBuilder extends RouteBuilder {
 
 	@Override
